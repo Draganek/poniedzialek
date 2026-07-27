@@ -1,0 +1,75 @@
+#naglowek {
+    background-color: rgb(50, 56, 226);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 30px;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+}
+#naglowek h1 {
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#naglowek p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+#baner {
+    background-image: url("https://picsum.photos/1200/300?random=2");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    text-shadow: 2px 2px 4px black;
+}
+
+#baner h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    word-spacing: 8px;
+}
+
+#baner p {
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+#tresc {
+    width: 100%;
+    background-color: aliceblue;
+    padding: 30px 0;
+    min-height: 300px;
+}
+
+.wpis {
+    width: 80%;
+    margin:  15px auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.wpis .autor {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.wpis .data {
+    margin-bottom: 10px;
+}
+
+.wpis .reakcje {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+    color: #3498db;
+    font-size: 15;
+    cursor: pointer;
+}
