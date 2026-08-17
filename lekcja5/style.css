@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 15%);
+}
+
+.postcard {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.sky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65%;
+  /* TODO: background sky gradient */
+  background: linear-gradient(to top, rgba(230, 164, 50, 1) 0%, rgba(102, 169, 232, 1) 100%);
+}
+
+.sun {
+  position: absolute;
+  top: 60px;
+  right: 80px;
+  width: 80px;
+  height: 80px;
+  /* TODO: sun shape and glow */
+  /* TODO: sun color experiment */
+  border-radius: 50%;
+  background-color: rgb(210, 231, 55);
+  box-shadow: -3px 4px 60px 30px rgba(202,185,18,0.83);
+  -webkit-box-shadow: -3px 4px 60px 30px rgba(202,185,18,0.83);
+  -moz-box-shadow: -3px 4px 60px 30px rgba(202,185,18,0.83);
+}
+
+.hills {
+  position: absolute;
+  bottom: 30%;
+  left: -10%;
+  width: 120%;
+  height: 45%;
+  /* TODO: hills shape */
+  background: radial-gradient(circle,rgba(98, 166, 43, 1) 53%, rgba(55, 115, 48, 1) 100%);
+  border-radius: 50% 50% 0 0;
+}
+
+.water {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 32%;
+  /* TODO: water color and transparency */
+  background: linear-gradient(0deg,rgba(69, 84, 255, 1) 33%, rgba(71, 87, 255, 1) 29%, rgba(137, 180, 240, 1) 91%);
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: Georgia, serif;
+  text-shadow: 1px 4px 6px rgba(0,0,0,0.7);
+  font-size: 2rem;
+  color: hsl(0, 0%, 100%)
+}
+
+/* HTML: <div class="cloud"></div> */
+.cloud {
+    height: 100px; 
+    aspect-ratio: 1.8;
+    --g: radial-gradient(50% 50%, #000 98%, #0000) no-repeat;
+    mask: var(--g) 100% 100%/30% 60%,var(--g) 70% 0/50% 100%,var(--g) 0 100%/36% 68%,var(--g) 27% 18%/26% 40%,linear-gradient(#000 0 0) bottom/67% 58% no-repeat;
+    background: #ffffff;
+}
